@@ -157,5 +157,6 @@ def recommend():
     return render_template('result.html', lang_content=translations[selected_language], 
                            crops=recommended_crops_translated, fertilizers=recommended_fertilizers_translated)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
+
